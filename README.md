@@ -16,12 +16,18 @@ Here is the answer:
 
 ```mysql
 SELECT
-	CASE 
-		WHEN ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) > ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
-		THEN "Average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ is greater"
-        WHEN ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) < ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
+CASE
+	WHEN 
+		( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) 
+		> 
+		( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
+	THEN "Average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ is greater"
+        WHEN 
+		( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) 
+		< 
+		( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
         THEN "Average spend from receipts with 'rewardsReceiptStatus’ of ‘Rejected’ is greater"
-		ELSE "They are the same"
+	ELSE "They are the same"
 	END AS COMPARING
 ;
 ```
