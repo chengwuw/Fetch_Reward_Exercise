@@ -14,6 +14,7 @@ Queries to answer question: When considering average spend from receipts with 'r
 
 Here is the answer:
 
+```mysql
 SELECT
 	CASE 
 		WHEN ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) > ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
@@ -23,3 +24,4 @@ SELECT
 		ELSE "They are the same"
 	END AS COMPARING
 ;
+```
