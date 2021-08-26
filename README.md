@@ -14,8 +14,8 @@ Queries to answer question: When considering average spend from receipts with 'r
 
 Here is the answer:
 
-> SELECT
-> 	CASE 
+SELECT
+	CASE 
 		WHEN ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) > ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
 		THEN "Average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ is greater"
         WHEN ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'FINISHED' ) < ( SELECT avg( totalSpent ) FROM receipts WHERE rewardsReceiptStatus = 'REJECTED' )
