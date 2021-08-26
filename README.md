@@ -10,7 +10,8 @@ For the ER Diagram:
 
 ## Question 2:
 
-Queries to answer question: When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?
+Queries to answer question: 
+**When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?**
 
 Here is the answer:
 
@@ -31,3 +32,14 @@ CASE
 	END AS COMPARING
 ;
 ```
+
+## Question 3:
+
+I utilized Python to detect data quality issues (null/missing values, duplicate values, data inconsistency).
+
+Please refer to [this file](https://github.com/chengwuw/Fetch_Reward_Exercise/blob/e658512919b946340750f0f64a6823edbed10274/Q3_data_quality_issue.ipynb) for the detailed codes.
+
+## Question 4:
+
+Construct an [email](https://github.com/chengwuw/Fetch_Reward_Exercise/blob/e658512919b946340750f0f64a6823edbed10274/Q4_Email.pdf) to a product/business leader on several topics.
+
