@@ -33,6 +33,8 @@ CASE
 ;
 ```
 
+More queries are shown in this [file](https://github.com/chengwuw/Fetch_Reward_Exercise/blob/a90aa31522b7c8e0cf01c0806ec0ec677f03795a/Q2_queries.sql).
+
 ## Question 3:
 
 I utilized Python to detect data quality issues (null/missing values, duplicate values, data inconsistency).
@@ -43,3 +45,5 @@ Please refer to [this file](https://github.com/chengwuw/Fetch_Reward_Exercise/bl
 
 Construct an [email](https://github.com/chengwuw/Fetch_Reward_Exercise/blob/e658512919b946340750f0f64a6823edbed10274/Q4_Email.pdf) to a product/business leader on several topics.
 
+
+Thanks for watching.
